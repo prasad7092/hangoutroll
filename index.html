@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find Your Hangout Spot</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="overlay">
+    <h1>FIND YOUR HANGOUT SPOT FOR TODAY</h1>
+    <div class="slot-machine">
+      <div id="reel">---</div>
+      <div class="lever-container">
+        <button onclick="pullLever()" class="lever-button">🎰</button>
+        <span class="lever-text">Pull the lever</span>
+      </div>
+    </div>
+    <p id="result"></p>
+    <canvas id="confetti-canvas" class="hidden"></canvas>
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <h2 id="cafe-name"></h2>
+        <p id="cafe-address"></p>
+        <p id="cafe-phone"></p>
+        <button onclick="replayGame()">Replay</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
